@@ -21,12 +21,12 @@ public class ModItems {
         //return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID), item);//改写
     }
     public static void addItemToIG(FabricItemGroupEntries fabricItemGroupEntries){
-        fabricItemGroupEntries.add(ICE_ETHER);
-        fabricItemGroupEntries.add(MY_NEWITEMS);
+        //fabricItemGroupEntries.add(ICE_ETHER); //添加进原版INGREDIENTS（材料物品栏）
+        //fabricItemGroupEntries.add(MY_NEWITEMS); //添加进原版INGREDIENTS（材料物品栏）
     }
 
     public static void registerModItems(){
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIG);;
+        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIG);; //添加进原版INGREDIENTS（材料物品栏）
         TutorialMod.LOGGER.info("Registering Items");
     }
 
