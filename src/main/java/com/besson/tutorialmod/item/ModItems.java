@@ -7,7 +7,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
-public class ModItems {
+public class ModItems {//a
 
     public static final Item ICE_ETHER = registerItems("ice_ether",new Item(new Item.Settings()));
     private static Item registerItems(String id, Item item){
