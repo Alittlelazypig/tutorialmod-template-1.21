@@ -1,7 +1,11 @@
 package com.besson.tutorialmod.item;
 
 import com.besson.tutorialmod.TutorialMod;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -16,7 +20,13 @@ public class ModItems {
         return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(),Identifier.of(TutorialMod.MOD_ID,id)), item);
         //return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID), item);//改写
     }
+    public static void addItemToIG(FabricItemGroupEntries fabricItemGroupEntries){
+        fabricItemGroupEntries.add(ICE_ETHER);
+        fabricItemGroupEntries.add(MY_NEWITEMS);
+    }
+
     public static void registerModItems(){
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIG);;
         TutorialMod.LOGGER.info("Registering Items");
     }
 
