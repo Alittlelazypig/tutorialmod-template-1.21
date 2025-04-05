@@ -1,6 +1,12 @@
 {
   "item.tutorialmod.ice_ether": "Ice Ether",
   "item.tutorialmod.my_newitems": "My_newitems",
+
   "itemGroup.tutorialmod.tutorial_group": "Tutorial_group",
-  "itemGroup.tutorialmod.zanew_group": "ANEW_GROUP"
+  "itemGroup.tutorialmod.block_group": "block",
+
+  "block.tutorialmod.caixin_heat": "caixin heat",
+  "block.tutorialmod.heguobang_heat": "heguobang heat",
+  "block.tutorialmod.wangwenjun_heat": "wangwenjun heat"
+
 }

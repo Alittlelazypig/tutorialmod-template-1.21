@@ -1,6 +1,11 @@
 {
   "item.tutorialmod.ice_ether": "及你太美",
   "item.tutorialmod.my_newitems": "蔡鑫的大雕",
-  "itemGroup.tutorialmod.tutorial_group": "随便的名字",
-  "itemGroup.tutorialmod.zanew_group": "新组"
+
+  "itemGroup.tutorialmod.tutorial_group": "熟菇",
+  "itemGroup.tutorialmod.block_group": "方块",
+
+  "block.tutorialmod.caixin_heat": "蔡鑫的头",
+  "block.tutorialmod.heguobang_heat": "何国邦的头",
+  "block.tutorialmod.wangwenjun_heat": "王玟俊的头"
 }

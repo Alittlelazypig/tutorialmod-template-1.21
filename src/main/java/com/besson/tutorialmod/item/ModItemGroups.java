@@ -1,6 +1,7 @@
 package com.besson.tutorialmod.item;
 
 import com.besson.tutorialmod.TutorialMod;
+import com.besson.tutorialmod.blocks.Modblocks;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.minecraft.item.Item;
@@ -14,8 +15,10 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
+
     public static final RegistryKey<ItemGroup> TUTORIAL_GROUP = register("tutorial_group");
-    public static final RegistryKey<ItemGroup> ZANEW_GROUP = register("zanew_group");
+    public static final RegistryKey<ItemGroup> BLOCK_GROUP = register("block_group");
+
     private static RegistryKey<ItemGroup> register(String id) {
         return RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.ofVanilla(id));
     }
@@ -31,18 +34,21 @@ public class ModItemGroups {
                         })
                         .build()
         );
-        Registry.register(Registries.ITEM_GROUP, ZANEW_GROUP,
+        Registry.register(Registries.ITEM_GROUP, BLOCK_GROUP,
         ItemGroup.create(ItemGroup.Row.TOP,-1)
-                .displayName(Text.translatable("itemGroup.tutorialmod.zanew_group"))
+                .displayName(Text.translatable("itemGroup.tutorialmod.block_group"))
                                 .icon(() -> new ItemStack(ModItems.MY_NEWITEMS))
                                         .entries((displayContext, entries) -> {
-                                            entries.add(ModItems.MY_NEWITEMS);
+
+                                            entries.add(Modblocks.CAIXIN_HEAT);
+                                            entries.add(Modblocks.HEGUOBANG_HEAT);
+                                            entries.add(Modblocks.WANGWENJUN_HEAT);
 
                                                 })
                                                 .build()
         );
 
-        TutorialMod.LOGGER.info("初始化成功");
+        TutorialMod.LOGGER.info("Registering Groups");
     }
 //api方法
 //    public static final ItemGroup TUTORIAL_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(TutorialMod.MOD_ID,"tutorial_group"),
