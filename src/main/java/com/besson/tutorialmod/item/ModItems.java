@@ -15,6 +15,8 @@ public class ModItems {
 
     public static final Item ICE_ETHER = registerItems("ice_ether",new Item(new Item.Settings()));
     public static final Item MY_NEWITEMS = registerItems("my_newitems",new Item(new Item.Settings()));
+
+
     private static Item registerItems(String id, Item item){
         //这是第一个下面 return 为改写更简单
         return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(),Identifier.of(TutorialMod.MOD_ID,id)), item);

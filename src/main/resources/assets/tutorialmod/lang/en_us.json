@@ -1,5 +1,6 @@
 {
   "item.tutorialmod.ice_ether": "Ice Ether",
   "item.tutorialmod.my_newitems": "My_newitems",
-  "itemGroup.tutorialmod.tutorial_group": "Tutorial_group"
+  "itemGroup.tutorialmod.tutorial_group": "Tutorial_group",
+  "itemGroup.tutorialmod.zanew_group": "ANEW_GROUP"
 }
