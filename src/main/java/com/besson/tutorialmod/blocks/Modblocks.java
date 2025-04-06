@@ -16,18 +16,20 @@ public class Modblocks {
     public static final Block CAIXIN_HEAT = register("caixin_heat",
             new Block(
                     AbstractBlock.Settings.create()
-                            .strength(1.5F,6.0F)
+                            .requiresTool()
+                            .strength(1.5F,1.5F)
             )
     );
     public static final Block HEGUOBANG_HEAT = register("heguobang_heat",
             new Block(
                     AbstractBlock.Settings.create()
-                            .strength(0F,0F)
+                            .requiresTool()
+                            .strength(1.5F,1.5F)
             ));
     public static final Block WANGWENJUN_HEAT = register("wangwenjun_heat",
             new Block(
                     AbstractBlock.Settings.create()
-                            .strength(100F,0F)
+                            .strength(1.5F,1.5F)
             ));
 
     public static void registerBlockItems(String id, Block block){
