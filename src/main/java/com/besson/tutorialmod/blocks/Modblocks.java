@@ -29,7 +29,7 @@ public class Modblocks {
     public static final Block WANGWENJUN_HEAT = register("wangwenjun_heat",
             new Block(
                     AbstractBlock.Settings.create()
-                            .strength(1.5F,1.5F)
+                            .strength(1.0F,1.0F)
             ));
 
     public static void registerBlockItems(String id, Block block){

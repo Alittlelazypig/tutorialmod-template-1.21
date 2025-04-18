@@ -31,6 +31,7 @@ public class ModItemGroups {
                         .entries((displayContext, entries) -> {
                             entries.add(ModItems.ICE_ETHER);
                             entries.add(ModItems.MY_NEWITEMS);
+                            entries.add(ModItems.YELLOW_JUNK);
                         })
                         .build()
         );
